@@ -4,7 +4,7 @@ body {
 
 .main-content {
 	background-color: white;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 blockquote {
@@ -22,3 +22,4 @@ blockquote {
 .chicken-divider-left {
 	max-width: 70%;
 }
+
