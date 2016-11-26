@@ -2,7 +2,19 @@ body {
 	background-color: #959595;
 }
 
-.main-content{
+.main-content {
 	background-color: white;
 	border-radius: 5px;
+}
+
+blockquote {
+	margin-top: 1.5em;
+}
+
+.quote {
+	margin-bottom: 0;
+}
+
+.attribution {
+	margin-top: 0;
 }
