@@ -18,3 +18,7 @@ blockquote {
 .attribution {
 	margin-top: 0;
 }
+
+.chicken-divider-left {
+	max-width: 70%;
+}
