@@ -31,3 +31,14 @@ blockquote {
     height: 60px;
     background-color: #f5f5f5;
 }
+
+.project-divider {
+	position: relative;
+}
+
+.project-h1 {
+	color: white;
+	position: absolute;
+	top: 6px;
+	left: 40%;
+}
