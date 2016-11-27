@@ -1,5 +1,5 @@
 body {
-	background-color: #959595;
+	background-color: #b7ebff;
 }
 
 .main-content {
@@ -42,14 +42,16 @@ body {
   height: 60px;
   background-color: #f5f5f5;
 }
-
+	
 .project-divider {
 	position: relative;
 }
 
 .project-h1 {
+	font-size: 3em;
+	
 	color: white;
 	position: absolute;
-	top: 6px;
+	top: 5px;
 	left: 40%;
 }
