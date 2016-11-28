@@ -77,7 +77,6 @@ body {
 }
 
 .school-work-box {
-	background: rgba(0,0,0,.5);
 	border-radius: 10px;
 }
 
@@ -85,6 +84,10 @@ body {
 
 
 /*project styles*/
+
+.project-background {
+	background: rgba(38,120,240,.5);
+}
 
 .thumbnail-wrapper {
 	margin: 2.5% 20px 2.5% 20px;
@@ -95,7 +98,6 @@ body {
 
 .thumb-box {
 	margin: 2.5% 20px 2.5% 20px;
-	background: rgba(0,0,0,.5);
 	border: none;
 }
 
