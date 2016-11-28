@@ -34,13 +34,18 @@ body {
 	background-color: #333;
 }
 body {
-	background: url(/images/background.jpg) slategray;
+	background: url(/images/background.jpg) center slategray;
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #fff;
 	text-align: center;
 	text-shadow: 0 1px 3px rgba(0,0,0,.5);
 	margin-bottom: 60px;
+}
+
+.transparent-overlay {
+	background: rgba(255,255,255,0.9);
+	background-size: cover;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -101,9 +106,11 @@ body {
 @media (min-width: 768px) {
 	.masthead-brand {
   		float: left;
+  		margin-left: 20px;
   	}
   	.masthead-nav {
   		float: right;
+  		margin-right: 20px;
   	}
 }
 
@@ -149,6 +156,6 @@ body {
 @media (min-width: 992px) {
 	.masthead,
 	.cover-container {
-    	width: 700px;
+    	width: 900px;
 	}
 }
