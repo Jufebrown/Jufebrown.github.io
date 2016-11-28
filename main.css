@@ -62,7 +62,7 @@ body {
 .bio {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 	border-radius: 10px;
 }
 
@@ -86,7 +86,7 @@ body {
 .school-work-box {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 	border-radius: 10px;
 }
 
