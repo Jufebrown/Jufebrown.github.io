@@ -32,10 +32,6 @@ body {
 	min-height: 100%;
 }
 
-.projects {
-	margin-top: 100px;
-}
-
 .section-heading {
 	background: rgba(0,0,0,.5);
 	width: 40%;
@@ -43,6 +39,7 @@ body {
 	padding-right: 15px;
 	text-align: right;
 	border-radius: 0 1.25em 1.25em 0;
+	margin-top: 100px;
 }
 
 .thumbnail-wrapper {
