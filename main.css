@@ -16,7 +16,7 @@ html {
 
 body {
 	height: 100%;
-	background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url(/images/background.jpg) center slategray;
+	background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url(/images/background.jpg) center slategray;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -41,6 +41,23 @@ body {
 	border-radius: 0 1.25em 1.25em 0;
 	margin-top: 100px;
 }
+
+
+
+/*about styles*/
+.about-flexbox {
+	display: flex;
+}
+
+.profile-pic {
+	border-radius: 10px;
+	width: 100%;
+}
+
+
+
+
+/*project styles*/
 
 .thumbnail-wrapper {
 	margin: 2.5% 20px 2.5% 20px;
