@@ -60,15 +60,22 @@ body {
 }
 
 .bio {
-	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	border-radius: 10px;
 }
 
 .star {
 	width: 30%;
 	margin: 20px auto 20px auto;
+}
+
+.pic-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border-radius: 10px;
 }
 
 .profile-pic {
@@ -77,10 +84,10 @@ body {
 }
 
 .school-work-box {
-	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	border-radius: 10px;
 }
 
 
