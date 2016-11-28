@@ -24,7 +24,11 @@ a:hover {
  * Base structure
  */
 
-html,
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
 	height: 100%;
 	background-color: #333;
@@ -36,6 +40,7 @@ body {
 	color: #fff;
 	text-align: center;
 	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	margin-bottom: 60px;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -54,11 +59,6 @@ body {
 .cover-container {
 	margin-right: auto;
 	margin-left: auto;
-}
-
-/* Padding for spacing */
-.inner {
-	padding: 30px;
 }
 
 
@@ -108,37 +108,19 @@ body {
 }
 
 
-/*
- * Cover
- */
-
-.cover {
-	padding: 0 20px;
-}
-.cover .btn-lg {
-	padding: 10px 20px;
-	font-weight: bold;
-}
-
 
 
 /* Sticky footer styles*/
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
+
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
+  background-color: #4f4f4f;
 }
 
 
