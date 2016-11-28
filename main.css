@@ -47,16 +47,23 @@ body {
 /*about styles*/
 .about-flexbox {
 	display: flex;
-	margin-top: 20px;
+	margin: 2.5% 20px 2.5% 20px;
 }
 
 .bio {
 	background: rgba(0,0,0,.5);
+	border-radius: 10px;
+	padding-top: 20px;
 }
 
 .profile-pic {
 	border-radius: 10px;
 	width: 100%;
+}
+
+.school-work-box {
+	background: rgba(0,0,0,.5);
+	border-radius: 10px;
 }
 
 
