@@ -9,11 +9,6 @@ a:hover {
   color: #fff;
 }
 
-
-
-
-
-
 html {
   position: relative;
   min-height: 100%;
@@ -61,6 +56,24 @@ body {
 
 .thumb-img {
 	border-radius: 3px;
+}
+
+.github-button {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin: auto 1em auto 1em;
+}
+
+.git-icon {
+	width: 32px;
+	margin: none;
+	padding: none;
+}
+
+.btn-text {
+	font-size: 2em;
+	display: inline-flex;
 }
 
 /* Sticky footer styles*/
