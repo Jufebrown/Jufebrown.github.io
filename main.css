@@ -51,24 +51,3 @@ body {
   background-color: #4f4f4f;
 }
 
-
-
-/*Affix and center*/
-
-@media (min-width: 768px) {
-
-	/* Start the vertical centering */
-	.site-wrapper-inner {
-  		vertical-align: middle;
-	}
-	/* Handle the widths */
-	.cover-container {
-  		width: 100%; /* Must be percentage or pixels for horizontal alignment */
-	}
-}
-
-@media (min-width: 992px) {
-	.cover-container {
-    	width: 900px;
-	}
-}
