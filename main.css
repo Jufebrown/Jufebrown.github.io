@@ -33,27 +33,42 @@ body {
 }
 
 .section-heading {
-	background: rgba(0,0,0,.5);
 	width: 40%;
 	height: 2.5em;
 	padding-right: 15px;
 	text-align: right;
 	border-radius: 0 1.25em 1.25em 0;
 	margin-top: 100px;
+	margin-bottom: 50px;
 }
 
 
 
 /*about styles*/
+
+.about-background {
+	background: rgba(2,123,52,.5);
+}
+
 .about-flexbox {
 	display: flex;
 	margin: 2.5% 20px 2.5% 20px;
 }
 
+.about-box {
+	margin: 2.5% 20px 2.5% 20px;
+}
+
 .bio {
-	background: rgba(0,0,0,.5);
 	border-radius: 10px;
-	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.star {
+	width: 30%;
+	margin: 20px auto 20px auto;
 }
 
 .profile-pic {
