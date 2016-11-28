@@ -44,13 +44,22 @@ body {
 	background: rgba(0,0,0,.5);
 	width: 40%;
 	height: 2.5em;
-	padding-right: 10px;
+	padding-right: 15px;
 	text-align: right;
 	border-radius: 0 1.25em 1.25em 0;
 }
 
 .thumbnail-wrapper {
 	margin: 2.5% 20px 2.5% 20px;
+}
+
+.thumb-box {
+	background: rgba(0,0,0,.5);
+	border: none;
+}
+
+.thumb-img {
+	border-radius: 3px;
 }
 
 /* Sticky footer styles*/
