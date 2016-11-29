@@ -2,7 +2,6 @@
  * Globals
  */
 
-/* Links */
 a,
 a:focus,
 a:hover {
@@ -30,10 +29,11 @@ body {
 	width: 100%;
 	height: 100%; /* For at least Firefox */
 	min-height: 100%;
+	padding: 0 0 0 0;
 }
 
 .section-heading {
-	width: 40%;
+	width: 50%;
 	height: 2.5em;
 	padding-right: 15px;
 	text-align: right;
@@ -52,6 +52,7 @@ body {
 
 .about-flexbox {
 	display: flex;
+	flex-direction: row;
 	margin: 2.5% 20px 2.5% 20px;
 }
 
@@ -64,10 +65,22 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	border-radius: 10px;
+	flex-grow: 1;
+	width: 25%;
 }
 
-.star {
-	width: 30%;
+.bio p {
+	margin: 5px;
+	text-align: justify;
+}
+
+.star-bio {
+	width: 50px;
+	margin: 20px auto 20px auto;
+}
+
+.star-work {
+	width: 50px;
 	margin: 20px auto 20px auto;
 }
 
@@ -76,6 +89,9 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	border-radius: 10px;
+	padding: 10px;
+	flex-grow: 2;
+	width: 40%;
 }
 
 .profile-pic {
@@ -88,8 +104,13 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	border-radius: 10px;
+	flex-grow: 1;
+	width: 25%;
 }
 
+.work-text-wrap {
+	text-align: justify;
+}
 
 
 
@@ -109,10 +130,24 @@ body {
 .thumb-box {
 	margin: 2.5% 20px 2.5% 20px;
 	border: none;
+	flex-grow: 1;
 }
 
 .thumb-img {
 	border-radius: 3px;
+	margin: 0 0 0 0;
+}
+
+.github-button {
+	margin: auto 10px auto 10px;
+}
+
+
+
+/*contact styles*/
+
+.contact-background {
+	background: rgba(169,124,44,.5);
 }
 
 
@@ -128,3 +163,56 @@ body {
   background-color: #222;
 }
 
+
+
+/*media queries*/
+
+@media (max-width: 1000px) and (min-width: 768px) {
+	.about-flexbox {
+		flex-wrap: wrap;
+	}
+
+	.star-work {
+		margin: auto 5px auto 5px;
+	}
+
+	.school-work-box {
+		flex-direction: row;
+		flex-grow: 2;
+	}
+}
+
+@media (max-width: 768px) {
+  	.about-flexbox {
+  		flex-wrap: wrap;
+  	}
+
+  	.bio {
+  		order: 2;
+  		width: 40%;
+  	}
+
+  	.star-work {
+  		margin: 10px auto 10px auto;
+  	}
+
+  	.pic-box {
+  		order: 1;
+	}
+
+  	.school-work-box {
+  		order: 3;
+  		width: 40%;
+  		flex-direction: column;
+  	}
+
+  	.thumbnail-wrapper {
+  		flex-wrap: wrap;
+  	}
+}
+
+@media (max-width: 320px) {
+  	.about-flexbox {
+  		flex-wrap: wrap;
+  	}
+}
