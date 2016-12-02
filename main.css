@@ -42,6 +42,12 @@ body {
 	margin-bottom: 50px;
 }
 
+.about-background, .project-background, .contact-background {
+  -webkit-box-shadow: -16px 21px 32px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -16px 21px 32px -1px rgba(0,0,0,0.75);
+  box-shadow: -16px 21px 32px -1px rgba(0,0,0,0.75);
+}
+
 
 
 /*about styles*/
