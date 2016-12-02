@@ -157,6 +157,23 @@ body {
 	background: rgba(255,126,0,.5);
 }
 
+.contact-box {
+  margin: 2.5% 25px 2.5% 25px;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-box img{
+  width: 50px;
+  margin: auto;
+}
+
+#email {
+  width: 75px;
+}
 
 
 /* Sticky footer styles*/
