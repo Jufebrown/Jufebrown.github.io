@@ -11,11 +11,30 @@
 
 	    <title>Jufe Brown-Tsai</title>
 
-	  <!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		  <!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	    <!-- Custom styles for this template -->
 	    <link href="main.css" rel="stylesheet">
+
+			<!-- load and instantiate ScrollReveal first -->
+	    <script src="js/scrollreveal.min.js"></script>
+	    <script>
+	      window.sr = ScrollReveal();
+
+	      // Add class to <html> if ScrollReveal is supported
+	      if (sr.isSupported()) {
+	        document.documentElement.classList.add('sr');
+	      }
+
+    	</script>
+
+    	<style>
+
+	      /* Ensure elements load hidden before ScrollReveal runs */
+	      .sr .scrollReveal { visibility: hidden; }
+
+    	</style>
 
   	</head>
 
@@ -92,7 +111,7 @@
 	  		<!-- end about -->
 
 			<!-- Projects -->
-			<div class="projects-section"  id="projects">
+			<div class="projects-section scrollReveal"  id="projects">
 	         	<div class="section-heading project-background">
 	         		<h2>Projects:</h2>
 	         	</div>
@@ -135,7 +154,7 @@
 			<!-- End Projects -->
 
 	        <!-- contact -->
-	        <div class="contact-wrapper" id="contact">
+	        <div class="contact-wrapper scrollReveal" id="contact">
 	        	<div class="section-heading contact-background">
 	         		<h2>Contact:</h2>
 	         	</div>
@@ -162,6 +181,7 @@
 	    <!-- Placed at the end of the document so the pages load faster -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
 	    <script type="text/javascript" src="jufe.js"></script>
   	</body>
 </html>
