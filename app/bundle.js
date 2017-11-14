@@ -14,12 +14,12 @@ app.config(function($routeProvider) {
 });
 
 },{}],2:[function(require,module,exports){
-const jquery = require('./node_modules/jquery/dist/jquery.min.js');
-const bootstrap = require('./node_modules/bootstrap/dist/js/bootstrap.min.js');
-const angular = require('./node_modules/angular/angular.min.js');
-const angularRoute = require('./node_modules/angular-route/angular-route.min.js');
+require('./node_modules/jquery/dist/jquery.min.js');
+require('./node_modules/bootstrap/dist/js/bootstrap.min.js');
+require('./node_modules/angular/angular.min.js');
+require('./node_modules/angular-route/angular-route.min.js');
 
-const app = require('./app/app.js');
+require('./app/app.js');
 
 },{"./app/app.js":1,"./node_modules/angular-route/angular-route.min.js":3,"./node_modules/angular/angular.min.js":4,"./node_modules/bootstrap/dist/js/bootstrap.min.js":5,"./node_modules/jquery/dist/jquery.min.js":6}],3:[function(require,module,exports){
 /*
