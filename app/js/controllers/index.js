@@ -3,4 +3,4 @@
 const app = require('angular').module('jufeApp');
 
 app.controller('HomeCtrl', require('./HomeCtrl'));
-app.controller('NavCtrl', require('./NavCtrl'));
+// app.controller('NavCtrl', require('./NavCtrl'));
