@@ -1,6 +1,6 @@
 'use strict';
 
-app.config(function($routeProvider) {
+module.exports = ($routeProvider) => {
   // App routes
   $routeProvider
     .when('/', {
@@ -8,4 +8,4 @@ app.config(function($routeProvider) {
       controller: 'HomeCtrl'
     })
     .otherwise('/');
-});
+};
