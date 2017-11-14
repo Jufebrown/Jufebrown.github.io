@@ -1,5 +1,7 @@
 'use strict';
  
-module.exports = ($scope) => {
+const HomeCtrl= ($scope) => {
   $scope.message = 'Hello';
 };
+
+module.exports = HomeCtrl;

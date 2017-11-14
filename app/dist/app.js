@@ -25,9 +25,11 @@ module.exports = app;
 },{"./controllers":3,"angular":7,"angular-route":5}],2:[function(require,module,exports){
 'use strict';
  
-module.exports = ($scope) => {
+const HomeCtrl= ($scope) => {
   $scope.message = 'Hello';
 };
+
+module.exports = HomeCtrl;
 },{}],3:[function(require,module,exports){
 'use strict';
 
