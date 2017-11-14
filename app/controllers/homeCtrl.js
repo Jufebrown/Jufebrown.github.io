@@ -1,3 +1,5 @@
-app.controller('HomeCtrl', function($scope, $location) {
-
-});
+'use strict';
+ 
+module.exports = function($scope) {
+  
+};

@@ -1,13 +1,10 @@
 'use strict';
 
-const app = angular.module('Jufe', ['ngRoute']);
+const angular = require('angular');
+const app = angular.module('jufeApp', ['ngRoute']);
 
-app.config(function($routeProvider) {
-  // App routes
-  $routeProvider
-    .when('/', {
-      templateUrl: 'partials/home.html',
-      controller: 'HomeCtrl'
-    })
-    .otherwise('/');
-});
+// one require statement per sub directory instead of one per file
+require('./factories');
+require('./controllers');
+require('./routes');
+
