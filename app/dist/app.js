@@ -22,7 +22,7 @@ app.config(($routeProvider) => {
 
 module.exports = app;
 
-},{"./controllers":3,"angular":7,"angular-route":5}],2:[function(require,module,exports){
+},{"./controllers":4,"angular":8,"angular-route":6}],2:[function(require,module,exports){
 'use strict';
  
 module.exports = function($scope) {
@@ -31,12 +31,19 @@ module.exports = function($scope) {
 },{}],3:[function(require,module,exports){
 'use strict';
 
+module.exports = function($scope) {
+  // $scope.message = 'Hello';
+};
+
+},{}],4:[function(require,module,exports){
+'use strict';
+
 const app = require('angular').module('jufeApp');
 
 app.controller('HomeCtrl', require('./HomeCtrl'));
-// app.controller('NavCtrl', require('./NavCtrl'));
+app.controller('NavCtrl', require('./NavCtrl'));
 
-},{"./HomeCtrl":2,"angular":7}],4:[function(require,module,exports){
+},{"./HomeCtrl":2,"./NavCtrl":3,"angular":8}],5:[function(require,module,exports){
 /**
  * @license AngularJS v1.6.6
  * (c) 2010-2017 Google, Inc. http://angularjs.org
@@ -1267,11 +1274,11 @@ function ngViewFillContentFactory($compile, $controller, $route) {
 
 })(window, window.angular);
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 require('./angular-route');
 module.exports = 'ngRoute';
 
-},{"./angular-route":4}],6:[function(require,module,exports){
+},{"./angular-route":5}],7:[function(require,module,exports){
 /**
  * @license AngularJS v1.6.6
  * (c) 2010-2017 Google, Inc. http://angularjs.org
@@ -35161,8 +35168,8 @@ $provide.value("$locale", {
 })(window);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 require('./angular');
 module.exports = angular;
 
-},{"./angular":6}]},{},[1]);
+},{"./angular":7}]},{},[1]);
