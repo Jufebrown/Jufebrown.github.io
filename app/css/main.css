@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Pattaya";
+    src: url(../../assets/fonts/Pattaya-Regular.ttf) format("truetype");
+}
+
+/* nav styles */
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.jufe {
+  font-family: Pattaya;
+}
