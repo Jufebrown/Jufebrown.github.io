@@ -2,14 +2,14 @@
 
 const angular = require('angular');
 const ngRoute = require('angular-route');
-const app = angular.module('jufeApp', [ngRoute]);
+const ngSanitize = require('angular-sanitize');
+const app = angular.module('jufeApp', [ngRoute, ngSanitize]);
 
 // one require statement per sub directory instead of one per file
-// require('./factories');
-
+require('./factories');
 require('./controllers');
 
-app.config(($routeProvider) => {
+app.config($routeProvider => {
   // App routes
   $routeProvider
     .when('/', {
