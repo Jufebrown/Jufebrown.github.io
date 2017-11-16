@@ -14,6 +14,38 @@
   margin: 0;
 }
 
+/* NAV STYLES */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.5em;
+  font-family: monofur;
+  /* background-color: #80deea; */
+  color: black;
+  padding: 10px;
+  /* border-radius: 3px; */
+}
+
+.jufe {
+  font-family: Pattaya;
+}
+
+
+
+/* CONTAINER STYLES */
 .flex-container {
   display: flex;
   justify-content: center;
