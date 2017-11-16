@@ -1,18 +1,20 @@
 'use strict';
 
+const $ = require('jquery');
+
 module.exports = function() {
   return {
-    hello: function () {
+    hello: function() {
       return 'hello';
     },
 
-    generateGridCells: function () {
+    generateGridCells: function() {
       let gridString = '';
-      let cols = 3;
-      let rows = 3;
+      let cols = 100;
+      let rows = 60;
       let totalCells = cols * rows;
       for (let i = 0; i < totalCells; i++) {
-        gridString += `<div class="item">${i}</div>`;
+        gridString += '<div class="item"></div>';
       }
       return gridString;
     }
