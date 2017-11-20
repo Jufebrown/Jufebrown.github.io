@@ -99,6 +99,8 @@ nav a {
   max-width: 30%;
   height: width;
   border-radius: 50%;
+  border: 3px solid black;
+  padding: 5px;
 }
 
 .about-text {
