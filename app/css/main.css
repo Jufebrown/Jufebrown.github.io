@@ -76,7 +76,12 @@ nav a {
 
 
 /* ABOUT PARTIAL STYLING */
-
+.about-link-container {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
 
 .about-image {
   max-width: 50px;
