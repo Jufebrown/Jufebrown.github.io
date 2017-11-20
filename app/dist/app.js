@@ -40,8 +40,6 @@ module.exports = function($scope) {
 'use strict';
  
 module.exports = function($scope, homeFactory) {
-  $scope.message = homeFactory.hello();
-
   $scope.gridCells = homeFactory.generateGridCells();
 };
 },{}],4:[function(require,module,exports){
