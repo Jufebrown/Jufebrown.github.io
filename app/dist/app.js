@@ -17,6 +17,14 @@ app.config($routeProvider => {
       templateUrl: 'partials/home.html',
       controller: 'HomeCtrl'
     })
+    .when('/projects', {
+      templateUrl: 'partials/projects.html',
+      controller: 'ProjectCtrl'
+    })
+    .when('/contact', {
+      templateUrl: 'partials/contact.html',
+      controller: 'ContactCtrl'
+    })
     .otherwise('/');
 });
 
@@ -51,10 +59,6 @@ const $ = require('jquery');
 
 module.exports = function() {
   return {
-    hello: function() {
-      return 'hello';
-    },
-
     generateGridCells: function() {
       let gridString = '';
       let cols = 100;
@@ -67,8 +71,6 @@ module.exports = function() {
     }
   };
 };
-
-
 },{"jquery":13}],6:[function(require,module,exports){
 'use strict';
 

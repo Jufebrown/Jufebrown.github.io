@@ -4,10 +4,6 @@ const $ = require('jquery');
 
 module.exports = function() {
   return {
-    hello: function() {
-      return 'hello';
-    },
-
     generateGridCells: function() {
       let gridString = '';
       let cols = 100;
@@ -20,4 +16,3 @@ module.exports = function() {
     }
   };
 };
-

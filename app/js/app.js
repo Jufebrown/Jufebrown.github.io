@@ -16,6 +16,14 @@ app.config($routeProvider => {
       templateUrl: 'partials/home.html',
       controller: 'HomeCtrl'
     })
+    .when('/projects', {
+      templateUrl: 'partials/projects.html',
+      controller: 'ProjectCtrl'
+    })
+    .when('/contact', {
+      templateUrl: 'partials/contact.html',
+      controller: 'ContactCtrl'
+    })
     .otherwise('/');
 });
 
