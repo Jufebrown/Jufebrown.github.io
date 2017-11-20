@@ -73,3 +73,10 @@ nav a {
   background-color: blue;
   border-radius: 50%;
 }
+
+
+/* ABOUT PARTIAL STYLING */
+.about-image {
+  max-width: 100px;
+  max-height: 100px;
+}
