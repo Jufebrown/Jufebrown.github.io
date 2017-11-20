@@ -76,6 +76,12 @@ nav a {
 
 
 /* ABOUT PARTIAL STYLING */
+.about-fam-photo {
+  max-width: 20%;
+  height: width;
+  border-radius: 50%;
+}
+
 .about-link-container {
   margin: 0 auto;
   width: 60%;
@@ -85,5 +91,5 @@ nav a {
 
 .about-image {
   max-width: 50px;
-  max-height: 50px;
+  height: 50px;
 }
