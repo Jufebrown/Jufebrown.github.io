@@ -21,7 +21,6 @@ app.config($routeProvider => {
 });
 
 module.exports = app;
-
 },{"./controllers":4,"./factories":6,"angular":12,"angular-route":8,"angular-sanitize":10}],2:[function(require,module,exports){
 'use strict';
  
@@ -68,6 +67,7 @@ module.exports = function() {
     }
   };
 };
+
 
 },{"jquery":13}],6:[function(require,module,exports){
 'use strict';

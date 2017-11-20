@@ -33,14 +33,23 @@ nav a {
   margin: 0 15px;
   font-size: 1.5em;
   font-family: monofur;
-  /* background-color: #80deea; */
   color: black;
   padding: 10px;
-  /* border-radius: 3px; */
 }
 
 .jufe {
   font-family: Pattaya;
+}
+
+.first-letter {
+  border-radius: 50%;
+  background-color: #4bacb8;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-right: -.45em;
 }
 
 
@@ -62,5 +71,5 @@ nav a {
 
 .item{
   background-color: blue;
-  border-radius: 1.5px;
+  border-radius: 50%;
 }
