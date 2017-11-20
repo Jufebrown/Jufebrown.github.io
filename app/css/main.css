@@ -77,10 +77,11 @@ nav a {
 
 /* ABOUT PARTIAL STYLING */
 .about-text-container {
-  margin-top: 5%;
+  width: 65%;
+  margin: 5% auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -92,6 +93,7 @@ nav a {
 
 .about-text {
   width: 40%;
+  margin-left: 5%;
 }
 
 .about-link-container {
