@@ -59,9 +59,9 @@ const app = require('angular').module('jufeApp');
 app.controller('HomeCtrl', require('./HomeCtrl'));
 app.controller('NavCtrl', require('./NavCtrl'));
 app.controller('ProjectsCtrl', require('./ProjectsCtrl'));
-app.controller('ContactCtrl', require('./ContactCtrl'));
+app.controller('AboutCtrl', require('./AboutCtrl'));
 
-},{"./ContactCtrl":2,"./HomeCtrl":3,"./NavCtrl":4,"./ProjectsCtrl":5,"angular":14}],7:[function(require,module,exports){
+},{"./AboutCtrl":2,"./HomeCtrl":3,"./NavCtrl":4,"./ProjectsCtrl":5,"angular":14}],7:[function(require,module,exports){
 'use strict';
 
 const $ = require('jquery');
