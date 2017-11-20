@@ -38,8 +38,29 @@ nav a {
   padding: 10px;
 }
 
+nav a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:active {
+  text-decoration: none;
+  color: black; 
+}
+
+nav a:focus {
+  text-decoration: none;
+  color: black; 
+}
+
+nav a:visited{
+  text-decoration: none;
+  color: black;
+}
+
 .jufe {
   font-family: Pattaya;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 }
 
 .first-letter {
@@ -108,7 +129,7 @@ nav a {
   margin-left: 5%;
 }
 
-.about-text h2 {
+.about-text h3 {
   font-family: Pattaya;
 }
 
