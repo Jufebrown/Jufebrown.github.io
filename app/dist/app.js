@@ -19,7 +19,7 @@ app.config($routeProvider => {
     })
     .when('/projects', {
       templateUrl: 'partials/projects.html',
-      controller: 'ProjectCtrl'
+      controller: 'ProjectsCtrl'
     })
     .when('/about', {
       templateUrl: 'partials/about.html',
@@ -50,8 +50,15 @@ module.exports = function($scope) {
 };
 
 },{}],5:[function(require,module,exports){
-arguments[4][4][0].apply(exports,arguments)
-},{"dup":4}],6:[function(require,module,exports){
+'use strict';
+
+module.exports = function($scope) {
+
+  
+
+};
+
+},{}],6:[function(require,module,exports){
 'use strict';
 
 const app = require('angular').module('jufeApp');
