@@ -104,9 +104,16 @@ nav a:visited{
 
 
 /* PROJECTS STYLES */
+.projects-container {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .carousel-container {
-  background-color: blue;
-  height: 50vh;
+  background-color: #80deea;
+  height: 60vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -137,7 +144,7 @@ nav a:visited{
 }
 
 .carousel-side-nav:hover {
-  opacity: .5;
+  opacity: .3;
 }
 
 
