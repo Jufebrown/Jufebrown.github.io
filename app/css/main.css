@@ -15,6 +15,11 @@
   font-family: monofur;
 }
 
+h3 {
+  font-family: Pattaya;
+  color: #515151;
+}
+
 /* NAV STYLES */
 nav {
   display: flex;
@@ -75,6 +80,9 @@ nav a:visited{
 }
 
 
+/* PROJECTS STYLES */
+
+
 
 /* CONTAINER STYLES */
 .flex-container {
@@ -116,21 +124,25 @@ nav a:visited{
   align-items: center;
 }
 
-.about-fam-photo {
-  max-width: 30%;
+.about-fam-photo-container {
+  max-width: 35%;
   height: width;
-  border-radius: 50%;
-  border: 3px solid black;
   padding: 5px;
+  border-radius: 50%;
+  border: 7px solid black;
+}
+
+.about-fam-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid black;
 }
 
 .about-text {
   width: 40%;
   margin-left: 5%;
-}
-
-.about-text h3 {
-  font-family: Pattaya;
+  text-align: justify;
 }
 
 .about-links-container {
