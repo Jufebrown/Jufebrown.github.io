@@ -1,3 +1,4 @@
+/* FONTS */
 @font-face {
     font-family: "Pattaya";
     src: url(../../assets/fonts/Pattaya-Regular.ttf) format("truetype");
@@ -8,6 +9,7 @@
     src: url(../../assets/fonts/monof55.ttf) format("truetype");
 }
 
+/* GENERAL STYLES */
 *{
   box-sizing: border-box;
   padding: 0;
@@ -17,8 +19,8 @@
 
 h3 {
   font-family: Pattaya;
-  color: #515151;
 }
+
 
 /* NAV STYLES */
 nav {
@@ -80,16 +82,32 @@ nav a:visited{
 }
 
 
-/* PROJECTS STYLES */
-.carousel-indicators {
-  width: 25%;
-  /* margin: 0 auto; */
+/* HOME STYLES */
+.flex-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-/* ABOUT PARTIAL STYLING */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(100, 8px);
+  grid-template-rows: repeat(60, 8px);
+  grid-gap: 1px;
+  width: 900px;
+  height: 540px;
+}
+
+.item{
+  background-color: blue;
+  border-radius: 50%;
+}
+
+
+/* PROJECTS STYLES */
+
+
+
+/* ABOUT STYLES */
 .about-container {
   margin: 0 auto;
   width: 80%;
@@ -153,4 +171,3 @@ nav a:visited{
   max-width: 50px;
   height: 50px;
 }
-

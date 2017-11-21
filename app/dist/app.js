@@ -36,7 +36,7 @@ app.config($routeProvider => {
 
 module.exports = app;
 
-},{"./controllers":6,"./factories":8,"angular":16,"angular-animate":10,"angular-route":12,"angular-sanitize":14}],2:[function(require,module,exports){
+},{"./controllers":6,"./factories":8,"angular":17,"angular-animate":11,"angular-route":13,"angular-sanitize":15}],2:[function(require,module,exports){
 'use strict';
 
 module.exports = function($scope) {
@@ -68,7 +68,7 @@ app.controller('NavCtrl', require('./NavCtrl'));
 app.controller('ProjectsCtrl', require('./ProjectsCtrl'));
 app.controller('AboutCtrl', require('./AboutCtrl'));
 
-},{"./AboutCtrl":2,"./HomeCtrl":3,"./NavCtrl":4,"./ProjectsCtrl":5,"angular":16}],7:[function(require,module,exports){
+},{"./AboutCtrl":2,"./HomeCtrl":3,"./NavCtrl":4,"./ProjectsCtrl":5,"angular":17}],7:[function(require,module,exports){
 'use strict';
 
 module.exports = function() {
@@ -91,8 +91,18 @@ module.exports = function() {
 const app = require('angular').module('jufeApp');
 
 app.factory('homeFactory', require('./homeFactory'));
+app.factory('projectFactory', require('./projectFactory'));
 
-},{"./homeFactory":7,"angular":16}],9:[function(require,module,exports){
+},{"./homeFactory":7,"./projectFactory":9,"angular":17}],9:[function(require,module,exports){
+'use strict';
+
+module.exports = function() {
+  return {
+
+  };
+};
+
+},{}],10:[function(require,module,exports){
 /**
  * @license AngularJS v1.6.6
  * (c) 2010-2017 Google, Inc. http://angularjs.org
@@ -4248,11 +4258,11 @@ angular.module('ngAnimate', [], function initAngularHelpers() {
 
 })(window, window.angular);
 
-},{}],10:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 require('./angular-animate');
 module.exports = 'ngAnimate';
 
-},{"./angular-animate":9}],11:[function(require,module,exports){
+},{"./angular-animate":10}],12:[function(require,module,exports){
 /**
  * @license AngularJS v1.6.6
  * (c) 2010-2017 Google, Inc. http://angularjs.org
@@ -5483,11 +5493,11 @@ function ngViewFillContentFactory($compile, $controller, $route) {
 
 })(window, window.angular);
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 require('./angular-route');
 module.exports = 'ngRoute';
 
-},{"./angular-route":11}],13:[function(require,module,exports){
+},{"./angular-route":12}],14:[function(require,module,exports){
 /**
  * @license AngularJS v1.6.6
  * (c) 2010-2017 Google, Inc. http://angularjs.org
@@ -6295,11 +6305,11 @@ angular.module('ngSanitize').filter('linky', ['$sanitize', function($sanitize) {
 
 })(window, window.angular);
 
-},{}],14:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 require('./angular-sanitize');
 module.exports = 'ngSanitize';
 
-},{"./angular-sanitize":13}],15:[function(require,module,exports){
+},{"./angular-sanitize":14}],16:[function(require,module,exports){
 /**
  * @license AngularJS v1.6.6
  * (c) 2010-2017 Google, Inc. http://angularjs.org
@@ -40189,8 +40199,8 @@ $provide.value("$locale", {
 })(window);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
-},{}],16:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 require('./angular');
 module.exports = angular;
 
-},{"./angular":15}]},{},[1]);
+},{"./angular":16}]},{},[1]);
