@@ -104,7 +104,11 @@ nav a:visited{
 
 
 /* PROJECTS STYLES */
-
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 
 /* ABOUT STYLES */
