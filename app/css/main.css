@@ -105,9 +105,39 @@ nav a:visited{
 
 /* PROJECTS STYLES */
 .carousel-container {
+  background-color: blue;
+  height: 50vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-side-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15%;
+  height: 100%;
+  color: white;
+}
+
+.carousel-left-nav {
+  align-items: flex-start;
+  padding-left: 1%;
+  background: linear-gradient(270deg, transparent, black);
+  opacity: .2;
+}
+
+.carousel-right-nav {
+  align-items: flex-end;
+  padding-right: 1%;
+  background: linear-gradient(90deg, transparent, black);
+  opacity: .2;
+}
+
+.carousel-side-nav:hover {
+  opacity: .5;
 }
 
 
