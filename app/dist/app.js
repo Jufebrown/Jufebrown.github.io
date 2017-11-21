@@ -21,7 +21,7 @@ require('./controllers');
 app.config($routeProvider => {
   // App routes
   $routeProvider
-    .when('/', {
+    .when('/home', {
       templateUrl: 'partials/home.html',
       controller: 'HomeCtrl'
     })
@@ -33,7 +33,7 @@ app.config($routeProvider => {
       templateUrl: 'partials/about.html',
       controller: 'AboutCtrl'
     })
-    .otherwise('/');
+    .otherwise('/home');
 });
 
 module.exports = app;
@@ -59,37 +59,8 @@ module.exports = function($scope) {
 };
 
 },{}],5:[function(require,module,exports){
-'use strict';
-
-module.exports = function($scope) {
-
-  $scope.myInterval = 5000;
-  $scope.noWrapSlides = false;
-  $scope.active = 0;
-  var slides = ($scope.slides = []);
-  var currIndex = 0;
-
-  $scope.addSlide = function() {
-    var newWidth = 600 + slides.length + 1;
-    slides.push({
-      image: '//unsplash.it/' + newWidth + '/300',
-      text: [
-        'Nice image',
-        'Awesome photograph',
-        'That is so cool',
-        'I love that'
-      ][slides.length % 4],
-      id: currIndex++
-    });
-  };
-
-  for (var i = 0; i < 4; i++) {
-    $scope.addSlide();
-  }
-
-};
-
-},{}],6:[function(require,module,exports){
+arguments[4][2][0].apply(exports,arguments)
+},{"dup":2}],6:[function(require,module,exports){
 'use strict';
 
 const app = require('angular').module('jufeApp');

@@ -20,7 +20,7 @@ require('./controllers');
 app.config($routeProvider => {
   // App routes
   $routeProvider
-    .when('/', {
+    .when('/home', {
       templateUrl: 'partials/home.html',
       controller: 'HomeCtrl'
     })
@@ -32,7 +32,7 @@ app.config($routeProvider => {
       templateUrl: 'partials/about.html',
       controller: 'AboutCtrl'
     })
-    .otherwise('/');
+    .otherwise('/home');
 });
 
 module.exports = app;
