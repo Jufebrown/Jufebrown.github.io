@@ -96,7 +96,7 @@ app.factory('projectFactory', require('./projectFactory'));
 },{"./homeFactory":7,"./projectFactory":9,"angular":17}],9:[function(require,module,exports){
 'use strict';
 
-module.exports = function() {
+module.exports = function($http) {
   return {
 
   };
