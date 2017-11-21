@@ -3,7 +3,15 @@
 const angular = require('angular');
 const ngRoute = require('angular-route');
 const ngSanitize = require('angular-sanitize');
-const app = angular.module('jufeApp', [ngRoute, ngSanitize]);
+const ngAnimate = require('angular-animate');
+const uiBootstrap = require('angular-ui-bootstrap');
+
+const app = angular.module('jufeApp', [
+  ngRoute,
+  ngSanitize,
+  ngAnimate,
+  uiBootstrap
+]);
 
 // one require statement per sub directory instead of one per file
 require('./factories');
