@@ -2,12 +2,17 @@
   <ul class="projects-card-container">
     <li class="card" ng-repeat="project in projects">
       <div class="project-image-container">
-        <img ng-src="{{project.image}}">
+        <img class="project-img" ng-src="{{project.image}}">
       </div>
       <h3>{{project.name}}</h3>
       <p ng-bind="project.description"></p>
       <div class="project-link-container">
-        
+        <a href="{{project.url}}">
+          <img src="../assets/images/project-link-icons/www.png" alt="website">
+        </a>
+        <a href="{{project.github}}">
+          <img src="../assets/images/project-link-icons/github.png" alt="github repo">
+        </a>
       </div>
     </li>
   </ul>
