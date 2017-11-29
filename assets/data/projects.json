@@ -3,17 +3,23 @@
     {
         "name": "Aidan's Bestial Companions",
         "image": "../assets/images/project-pics/abc.png",
-        "description": "This is a game I built for my son. It has a front-end built with Angularjs and Materialize. The back end is Nodejs with express and uses a Postgres database with knex and bookshelf for an ORM. The back end is hosted on heroku and the front end is hosted on Github pages."
+        "description": "This is a game I built for my son. It has a front-end built with Angularjs and Materialize. The back end is Nodejs with express and uses a Postgres database with knex and bookshelf for an ORM. The back end is hosted on heroku and the front end is hosted on Github pages.",
+        "url": "https://jufebrown.github.io/abc-frontend",
+        "github": "https://github.com/Jufebrown/abc-frontend"
     },
     {
         "name": "NSS Cohort17 website",
         "image": "../assets/images/project-pics/17.png",
-        "description": "For our class website I wrote code that checks an api to see what times sunrise and sunset are in Nashville, TN and compares the current time to those values, then displays a daytime or nighttime backdrop on the page. I also made the 'underground' graphic at the bottom of the page and wrote the function that shuffles our individual pictures."
+        "description": "For our class website I wrote code that checks an api to see what times sunrise and sunset are in Nashville, TN and compares the current time to those values, then displays a daytime or nighttime backdrop on the page. I also made the 'underground' graphic at the bottom of the page and wrote the function that shuffles our individual pictures.",
+        "url": "https://nss-day-cohort-17.github.io",
+        "github": "https://github.com/nss-day-cohort-17/nss-day-cohort-17.github.io"
     },
     {
         "name": "Mech Combat",
         "image": "../assets/images/project-pics/mech.png",
-        "description": "This was my front-end capstone project for Nashville Software School. It is a game based on the old Battletech board game. It uses the phaser.js library and the HTML5 canvas element. The biggest challenge was converting back and forth between pixel coordinates and the hex map coordinates."
+        "description": "This was my front-end capstone project for Nashville Software School. It is a game based on the old Battletech board game. It uses the phaser.js library and the HTML5 canvas element. The biggest challenge was converting back and forth between pixel coordinates and the hex map coordinates.",
+        "url": "https://jufebrown.github.io/mech-combat",
+        "github": "https://github.com/Jufebrown/mech-combat"
     }
   ]
 }
