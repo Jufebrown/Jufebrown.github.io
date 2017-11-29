@@ -6,5 +6,4 @@ module.exports = function($scope, $http) {
     .then(function onSuccess(projects) {
       $scope.projects = projects.data.projects;
     });
-  
 };

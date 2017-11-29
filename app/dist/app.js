@@ -65,7 +65,6 @@ module.exports = function($scope, $http) {
     .then(function onSuccess(projects) {
       $scope.projects = projects.data.projects;
     });
-  
 };
 
 },{}],6:[function(require,module,exports){
@@ -108,7 +107,15 @@ app.factory('projectFactory', require('./projectFactory'));
 
 module.exports = function($http) {
   return {
-
+    getProjects: function() {
+      $http
+        .get('../../assets/data/projects.json')
+        .then(function onSuccess(data) {
+          console.log(data);
+          let projects = data.data.projects;
+          return projects;
+        });
+    }
   };
 };
 
