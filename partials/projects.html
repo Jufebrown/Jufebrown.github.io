@@ -1,6 +1,9 @@
 <div class="projects-container">
   <ul class="projects-card-container">
     <li class="card" ng-repeat="project in projects">
+      <div class="project-image-container">
+        <img ng-src="{{project.image}}">
+      </div>
       <h3>{{project.name}}</h3>
       <p ng-bind="project.description"></p>
     </li>
