@@ -40,15 +40,18 @@ module.exports = app;
 'use strict';
 
 module.exports = function($scope) {
-
+  document.querySelector('.about-nav').focus();
 };
 
 },{}],3:[function(require,module,exports){
 'use strict';
- 
+
 module.exports = function($scope, homeFactory) {
+  document.querySelector('.home-nav').focus();
+  
   $scope.gridCells = homeFactory.generateGridCells();
 };
+
 },{}],4:[function(require,module,exports){
 'use strict';
 
@@ -56,21 +59,20 @@ module.exports = function($scope) {
   $scope.setHomeLinkActive = () => {
     document.querySelector('.home-nav').focus();
   };
-
-  $scope.setHomeLinkActive();
 };
 
 },{}],5:[function(require,module,exports){
 'use strict';
 
 module.exports = function($scope, $http) {
-  
-  $http.get('../../assets/data/projects.json')
+  document.querySelector('.project-nav').focus();
+
+  $http
+    .get('../../assets/data/projects.json')
     .then(function onSuccess(projects) {
       $scope.projects = projects.data.projects;
     });
 };
-
 
 },{}],6:[function(require,module,exports){
 'use strict';

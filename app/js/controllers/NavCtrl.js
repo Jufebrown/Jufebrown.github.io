@@ -4,6 +4,4 @@ module.exports = function($scope) {
   $scope.setHomeLinkActive = () => {
     document.querySelector('.home-nav').focus();
   };
-
-  $scope.setHomeLinkActive();
 };
