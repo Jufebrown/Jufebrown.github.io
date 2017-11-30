@@ -118,19 +118,54 @@ nav a:visited{
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .card {
-  margin: 0px 5px 20px 5px;
-  min-width: 300px;
+  margin-top: 1em;
+  min-width: 250px;
   max-width: 25%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.card-corner-container {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-corner {
+  width: 10px;
+  height: 10px;
+}
+
+.corner-top-left {
+  border-top: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+}
+
+.corner-top-right {
+  border-top: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+}
+
+.corner-bottom-left {
+  border-bottom: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  align-self: flex-end;
+}
+
+.corner-bottom-right {
+  border-bottom: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+  align-self: flex-end;
 }
 
 .project-image-container {
-  max-width: 80%;
+  align-self: center;
+  max-width: 60%;
   height: width;
   padding: 5px;
   border-radius: 50%;
