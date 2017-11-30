@@ -1,7 +1,9 @@
 'use strict';
 
 module.exports = function($scope) {
-  $scope.setActive = function() {
-    
+  $scope.setHomeLinkActive = () => {
+    document.querySelector('.home-nav').focus();
   };
+
+  $scope.setHomeLinkActive();
 };
