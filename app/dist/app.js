@@ -69,6 +69,7 @@ module.exports = function($scope, $http) {
     });
 };
 
+
 },{}],6:[function(require,module,exports){
 'use strict';
 

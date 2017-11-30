@@ -73,17 +73,6 @@ nav a:visited{
   text-shadow: 4px 4px 2px rgba(150, 150, 150, .5);
 }
 
-.first-letter {
-  border-radius: 50%;
-  /* background-color: #4bacb8; */
-  display: inline-block;
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-  text-align: center;
-  margin-right: -.45em;
-}
-
 
 /* HOME STYLES */
 .flex-container {
