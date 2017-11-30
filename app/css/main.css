@@ -61,6 +61,7 @@ nav a:active {
 
 nav a:focus {
   text-decoration: none;
+  outline: none;
   color: black; 
   text-shadow: 4px 4px 1px rgba(74, 172, 184, .5);
 }
