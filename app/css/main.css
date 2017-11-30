@@ -105,7 +105,7 @@ nav a:visited{
 
 /* PROJECTS STYLES */
 .projects-container {
-  height: 75vh;
+  height: 86vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
