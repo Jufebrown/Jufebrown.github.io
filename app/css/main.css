@@ -294,16 +294,68 @@ nav a:visited{
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    /* GENERAL */
+    h3 {
+      font-size: 3em;
+    }
+
+    /* PROJECTS */
     .card {
       min-width: 250px;
       max-width: 90%;
     }
 
+    .card h3 {
+      margin: 5% 0;
+    }
+
     .card p {
+      font-size: 2em;
       text-align: justify;
       max-width: 80%;
       align-self: center;
     }
 
+    .card-corner {
+      width: 20px;
+      height: 20px;
+    }
+
+    .corner-top-left {
+      border-top: 3px solid #bbb;
+      border-left: 3px solid #bbb;
+    }
+
+    .corner-top-right {
+      border-top: 3px solid #bbb;
+      border-right: 3px solid #bbb;
+    }
+
+    .corner-bottom-left {
+      border-bottom: 3px solid #bbb;
+      border-left: 3px solid #bbb;
+      align-self: flex-end;
+    }
+
+    .corner-bottom-right {
+      border-bottom: 3px solid #bbb;
+      border-right: 3px solid #bbb;
+      align-self: flex-end;
+    }
+
+    .project-link-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-end;
+      margin: 12% 0 10% 0;
+      align-self: flex-end;
+    }
+
+    .project-link-container a {
+      width: 10%;
+      height: width;
+      border-radius: 50%;
+    }
 
 }
