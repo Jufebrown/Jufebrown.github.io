@@ -50,17 +50,19 @@ nav a {
 nav a:hover {
   text-decoration: none;
   color: black;
-  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, .5);
 }
 
 nav a:active {
   text-decoration: none;
   color: black; 
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 0);
 }
 
 nav a:focus {
   text-decoration: none;
   color: black; 
+  text-shadow: 4px 4px 1px rgba(74, 172, 184, .5);
 }
 
 nav a:visited{
