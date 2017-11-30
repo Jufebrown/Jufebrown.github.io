@@ -7,3 +7,4 @@ module.exports = function($scope, $http) {
       $scope.projects = projects.data.projects;
     });
 };
+
