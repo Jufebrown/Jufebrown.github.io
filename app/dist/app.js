@@ -53,7 +53,9 @@ module.exports = function($scope, homeFactory) {
 'use strict';
 
 module.exports = function($scope) {
-  
+  $scope.setActive = function() {
+    
+  };
 };
 
 },{}],5:[function(require,module,exports){

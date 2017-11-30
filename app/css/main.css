@@ -24,30 +24,33 @@ h3 {
 
 /* NAV STYLES */
 nav {
+  height: 4em;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 nav ul {
+  height: 100%;
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  overflow-y: hidden;
 }
 
 nav a {
-  text-decoration: none;
   margin: 0 15px;
+  text-decoration: none;
   font-size: 1.5em;
   font-family: monofur;
   color: black;
-  padding: 10px;
 }
 
 nav a:hover {
   text-decoration: none;
   color: black;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 }
 
 nav a:active {
@@ -72,7 +75,7 @@ nav a:visited{
 
 .first-letter {
   border-radius: 50%;
-  background-color: #4bacb8;
+  /* background-color: #4bacb8; */
   display: inline-block;
   height: 30px;
   width: 30px;
