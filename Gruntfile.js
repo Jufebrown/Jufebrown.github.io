@@ -1,12 +1,12 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     browserify: {
-      'dist/app.js': ['js/app.js']
+      'app/dist/app.js': ['app/js/app.js']
     },
     sass: {
       dist: {
         files: {
-          'stylesheets/main.css': 'sass/main.scss'
+          'app/stylesheets/main.css': 'app/sass/main.scss'
         }
       }
     },
