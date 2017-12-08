@@ -1,14 +1,4 @@
-/* FONTS */
-@font-face {
-  font-family: "Pattaya";
-  src: url(../../assets/fonts/Pattaya-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "monofur";
-  src: url(../../assets/fonts/monof55.ttf) format("truetype");
-}
-
+@import 'fonts';
 
 /* GENERAL STYLES */
 *{
