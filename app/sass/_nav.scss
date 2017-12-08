@@ -1,0 +1,52 @@
+nav {
+  height: 4em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  overflow-y: hidden;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: monofur;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: black;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, .5);
+}
+
+nav a:active {
+  text-decoration: none;
+  color: black; 
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 0);
+}
+
+nav a:focus {
+  text-decoration: none;
+  outline: none;
+  color: black; 
+  text-shadow: 4px 4px 1px rgba(74, 172, 184, .5);
+}
+
+nav a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+.jufe {
+  font-family: Pattaya;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, .5);
+}
