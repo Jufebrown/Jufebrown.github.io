@@ -3,7 +3,7 @@
     {
         "name": "Aidan's Bestial Companions",
         "image": "../assets/images/project-pics/abc.png",
-        "description": "This is a game I built for my son. It has a front-end built with Angularjs and Materialize. The back end is Nodejs with express and uses a Postgres database with knex and bookshelf for an ORM. The back end is hosted on heroku and the front end is hosted on Github pages.",
+        "description": "This is a game I made for my son. It has a front-end built with Angularjs and Materialize. The back end is Nodejs with express and uses a Postgres database with knex and bookshelf for an ORM. The back end is hosted on heroku and the front end is hosted on Github pages.",
         "url": "https://jufebrown.github.io/abc-frontend",
         "github": "https://github.com/Jufebrown/abc-frontend"
     },
