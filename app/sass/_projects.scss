@@ -1,32 +1,33 @@
 .projects-container {
+  height: 86vh;
   
   .projects-card-container {
+    height: 100%;
     margin: 2%;
     list-style: none;
     display: grid;
-    grid-auto-rows: minmax(80%, auto);
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-    justify-items: center;
-    align-items: stretch;
+    grid-auto-rows: minmax(86vh, auto);
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5%;
     
     .card {
-      // grid-column-start: 1 span 1;
-      display: subgrid;
-      grid-template-rows: 30% 5% 30% 15% 20%;
-      grid-template-columns: repeat(2, 1fr);
-      justify-items: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center;
       
       h3 {
         color: #aaa;
+        text-align: center;
       }
       
       p {
         text-align: justify;
+        margin: 0 10px;
       }
 
       .card-corner-container {
-        display: block;
         display: flex;
         justify-content: space-between;
 
@@ -48,15 +49,18 @@
         .corner-bottom-left {
           border-bottom: 1px solid #bbb;
           border-left: 1px solid #bbb;
+          align-self: flex-end;
         }
         
         .corner-bottom-right {
           border-bottom: 1px solid #bbb;
           border-right: 1px solid #bbb;
+          align-self: flex-end;
         }
       }
       
       .project-image-container {
+        align-self: center;
         max-width: 60%;
         height: width;
         padding: 5px;
@@ -75,7 +79,7 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-end;
-        margin: 10% 0 5% 0;
+        margin: 6% 0 0 0;
       
         a {
           width: 15%;
@@ -104,7 +108,8 @@
       
       .card-corner-container-bottom {
         width: 100%;
-        align-items: flex-end;
+        // align-items: flex-end;
+        align-self: flex-end;
       }
     }
   }
