@@ -237,18 +237,18 @@ nav a:visited {
     font-size: 3em; }
 
   /* PROJECTS */
+  .projects-card-container {
+    height: 100%;
+    margin: 2%;
+    list-style: none;
+    display: grid;
+    grid-auto-rows: minmax(1fr, auto);
+    grid-template-columns: 1 250px;
+    grid-gap: 5%; }
+
   .card {
     min-width: 200px;
     max-width: 90%; }
-
-  .card h3 {
-    margin: 5% 0; }
-
-  .card p {
-    font-size: 2em;
-    text-align: justify;
-    max-width: 80%;
-    align-self: center; }
 
   .card-corner {
     width: 20px;
@@ -271,19 +271,6 @@ nav a:visited {
     border-bottom: 3px solid #bbb;
     border-right: 3px solid #bbb;
     align-self: flex-end; }
-
-  .project-link-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-    margin: 12% 0 10% 0;
-    align-self: flex-end; }
-
-  .project-link-container a {
-    width: 10%;
-    height: width;
-    border-radius: 50%; }
 
   /* ABOUT */
   .about-container {
