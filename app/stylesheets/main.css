@@ -89,7 +89,7 @@ nav a:visited {
     .projects-container .projects-card-container :hover {
       background-color: #eff4ff; }
     .projects-container .projects-card-container .card {
-      margin-top: 20px;
+      margin-top: 10px;
       height: 100%;
       display: grid;
       grid-template-rows: repeat(4 auto); }
