@@ -16,10 +16,10 @@
       <p ng-bind="project.description"></p>
 
       <div class="project-link-container">
-        <a href="{{project.url}}">
+        <a href="{{project.url}}" data-toggle="tooltip" data-placement="bottom" title="{{project.url}}">
           <img src="../assets/images/project-link-icons/www.png" alt="website">
         </a>
-        <a href="{{project.github}}">
+        <a href="{{project.github}}" data-toggle="tooltip" data-placement="bottom" title="{{project.github}}">
           <img src="../assets/images/project-link-icons/github.png" alt="github repo">
         </a>
       </div>
