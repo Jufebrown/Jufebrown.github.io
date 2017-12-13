@@ -2,7 +2,7 @@
   <ul class="projects-card-container">
     <li class="card" ng-repeat="project in projects">
       
-      <div class="card-corner-container">
+      <div class="card-corner-container card-corner-container-top">
         <div class="card-corner corner-top-left"></div>
         <div class="card-corner corner-top-right"></div>
       </div>
@@ -16,10 +16,10 @@
       <p ng-bind="project.description"></p>
 
       <div class="project-link-container">
-        <a href="{{project.url}}">
+        <a href="{{project.url}}" data-toggle="tooltip" data-placement="bottom" title="{{project.url}}">
           <img src="../assets/images/project-link-icons/www.png" alt="website">
         </a>
-        <a href="{{project.github}}">
+        <a href="{{project.github}}" data-toggle="tooltip" data-placement="bottom" title="{{project.github}}">
           <img src="../assets/images/project-link-icons/github.png" alt="github repo">
         </a>
       </div>
@@ -34,19 +34,4 @@
 
   </div>
 
-
-
-  <!-- CODE FOR LATER CAROUSEL -->
-  <!-- <div class="carousel-container">
-    <div class="carousel-left-nav carousel-side-nav">
-      <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-    </div>
-    <div class="carousel-main">
-      <div class="carousel-slide"></div>
-      <div class="carousel-slide-control-container"></div>
-    </div>
-    <div class="carousel-right-nav carousel-side-nav">
-      <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-    </div>
-  </div> -->
 </div>
