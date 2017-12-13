@@ -13,7 +13,7 @@
     .card {
       height: 100%;
       display: grid;
-      grid-template-rows: repeat(4 1fr);
+      grid-template-rows: 10px repeat(4 auto) 10px;
       
       h3 {
         color: #aaa;
@@ -26,6 +26,7 @@
       }
 
       .card-corner-container {
+        height: 10px;
         display: flex;
         justify-content: space-between;
 
@@ -55,10 +56,6 @@
           border-right: 1px solid #bbb;
           align-self: flex-end;
         }
-      }
-
-      .card-corner-container-top {
-        grid-row-start: 1;
       }
       
       .project-image-container {
@@ -112,6 +109,7 @@
       
       .card-corner-container-bottom {
         width: 100%;
+        align-self: end;
       }
     }
   }
