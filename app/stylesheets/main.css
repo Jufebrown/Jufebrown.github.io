@@ -242,8 +242,6 @@ nav a:visited {
     margin: 2%;
     list-style: none;
     display: grid;
-    grid-auto-rows: minmax(1fr, auto);
-    grid-template-columns: 1 250px;
     grid-gap: 5%; }
 
   .card {
