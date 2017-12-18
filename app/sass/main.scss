@@ -12,8 +12,9 @@ h3 {
   font-family: Pattaya;
 }
 
+@import 'variables';
+@import 'mobile';
 @import 'nav';
 @import 'home';
 @import 'projects';
 @import 'about';
-@import 'mobile';
