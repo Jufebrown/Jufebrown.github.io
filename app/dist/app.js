@@ -50,6 +50,8 @@ module.exports = function($scope, homeFactory) {
   document.querySelector('.home-nav').focus();
   
   $scope.gridCells = homeFactory.generateGridCells();
+
+  homeFactory.fadeCells();
 };
 
 },{}],4:[function(require,module,exports){
