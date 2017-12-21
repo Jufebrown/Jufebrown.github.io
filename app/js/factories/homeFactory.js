@@ -11,6 +11,14 @@ module.exports = function() {
         gridString += '<div class="item"></div>';
       }
       return gridString;
+    },
+
+    fadeCells: function() {
+      let cellsArray = document.querySelectorAll('.item');
+      console.log('cellsArray', cellsArray);
+      for (let i = 0; i < cellsArray.length; i++) {
+        cellsArray[i].addClass('animated').addClass('fadeOut');
+      }
     }
   };
 };
