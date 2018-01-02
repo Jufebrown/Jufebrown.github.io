@@ -5,5 +5,4 @@ module.exports = function($scope, homeFactory) {
   
   $scope.gridCells = homeFactory.generateGridCells();
 
-  homeFactory.fadeCells();
 };
