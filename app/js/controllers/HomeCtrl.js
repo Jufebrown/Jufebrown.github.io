@@ -5,10 +5,11 @@ module.exports = function($scope, homeFactory) {
 
   // $scope.gridCells = homeFactory.generateGridCells();
 
+  let canvas = document.getElementById('homeCanvas');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight * .8;
+
   $scope.draw = () => {
-    let canvas = document.getElementById('homeCanvas');
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight * .8;
     if (canvas.getContext) {
       var ctx = canvas.getContext('2d');
 
@@ -17,6 +18,9 @@ module.exports = function($scope, homeFactory) {
 
       ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
       ctx.fillRect(80, 80, 250, 250);
+    } else {
+      /* TODO: put something here for people using old browsers */
+      console.log('canvas not supported');
     }
   };
 
