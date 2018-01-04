@@ -53,17 +53,29 @@ module.exports = function($scope, homeFactory) {
 
   let canvas = document.getElementById('homeCanvas');
   canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight * .8;
+  canvas.height = window.innerHeight * 0.8;
+  const ctx = canvas.getContext('2d');
+  let raf;
 
-  $scope.draw = () => {
-    if (canvas.getContext) {
-      var ctx = canvas.getContext('2d');
-
+  let square = {
+    x: 10,
+    y: 10,
+    vx: 3,
+    vy: 5,
+    draw: function() {
       ctx.fillStyle = 'rgb(200, 0, 0)';
-      ctx.fillRect(10, 10, 250, 250);
+      ctx.fillRect(this.x, this.y, 250, 250);
+    }
+  };
 
-      ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
-      ctx.fillRect(80, 80, 250, 250);
+  $scope.draw = function() {
+    if (canvas.getContext) {
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      square.draw();
+      square.x += square.vx;
+      square.y += square.vy;
+      raf = window.requestAnimationFrame($scope.draw);
     } else {
       /* TODO: put something here for people using old browsers */
       console.log('canvas not supported');
@@ -110,17 +122,7 @@ app.controller('AboutCtrl', require('./AboutCtrl'));
 
 module.exports = function() {
   return {
-    generateGridCells: function() {
-      let gridString = '';
-      let cols = 100;
-      let rows = 60;
-      let totalCells = cols * rows;
-      for (let i = 0; i < totalCells; i++) {
-        gridString +=
-          '<div class="led-pix default"></div>';
-      }
-      return gridString;
-    }
+    
   };
 };
 
@@ -141,7 +143,6 @@ module.exports = function($http) {
       $http
         .get('../../assets/data/projects.json')
         .then(function onSuccess(data) {
-          console.log(data);
           let projects = data.data.projects;
           return projects;
         });

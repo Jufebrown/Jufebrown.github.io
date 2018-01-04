@@ -6,7 +6,6 @@ module.exports = function($http) {
       $http
         .get('../../assets/data/projects.json')
         .then(function onSuccess(data) {
-          console.log(data);
           let projects = data.data.projects;
           return projects;
         });
