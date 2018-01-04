@@ -8,10 +8,10 @@ module.exports = function() {
       let rows = 60;
       let totalCells = cols * rows;
       for (let i = 0; i < totalCells; i++) {
-        gridString += `<div class="led-pix" ng-show='ledPixel${i}'></div>`;
+        gridString +=
+          '<div class="led-pix default"></div>';
       }
       return gridString;
     }
-    
   };
 };
