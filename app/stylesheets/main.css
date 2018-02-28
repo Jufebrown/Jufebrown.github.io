@@ -184,6 +184,9 @@ nav a:visited {
 .item {
   border-radius: 50%; }
 
+.blue {
+  background-color: blue; }
+
 .projects-container {
   height: 86vh; }
   .projects-container .projects-card-container {
