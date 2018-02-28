@@ -185,7 +185,9 @@ nav a:visited {
   border-radius: 50%; }
 
 .blue {
-  background-color: blue; }
+  background-color: blue;
+  transition: 2s linear all;
+  opacity: 1; }
 
 .projects-container {
   height: 86vh; }

@@ -90,7 +90,7 @@ app.controller('AboutCtrl', require('./AboutCtrl'));
 },{"./AboutCtrl":2,"./HomeCtrl":3,"./NavCtrl":4,"./ProjectsCtrl":5,"angular":17}],7:[function(require,module,exports){
 'use strict';
 
-module.exports = function() {
+module.exports = () => {
   return {
     generateGridArray: function() {
       let gridArray = [];
@@ -111,21 +111,13 @@ app.factory('homeFactory', require('./homeFactory'));
 app.factory('projectFactory', require('./projectFactory'));
 
 },{"./homeFactory":7,"./projectFactory":9,"angular":17}],9:[function(require,module,exports){
-'use strict';
-
-module.exports = function($http) {
-  return {
-    getProjects: function() {
-      $http
-        .get('../../assets/data/projects.json')
-        .then(function onSuccess(data) {
-          console.log(data);
-          let projects = data.data.projects;
-          return projects;
-        });
-    }
-  };
-};
+module.exports = $http => ({
+  getProjects() {
+    $http
+      .get('../../assets/data/projects.json')
+      .then(({ data: { projects } }) => projects);
+  },
+});
 
 },{}],10:[function(require,module,exports){
 /**
