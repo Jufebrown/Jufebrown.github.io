@@ -186,7 +186,7 @@ nav a:visited {
 
 .blue {
   background-color: blue;
-  transition: 2s linear all;
+  transition: 1s linear all;
   opacity: 1; }
 
 .projects-container {

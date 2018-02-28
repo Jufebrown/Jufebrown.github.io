@@ -1,4 +1,4 @@
-'use strict';
+
 
 const angular = require('angular');
 const ngRoute = require('angular-route');
@@ -8,27 +8,27 @@ const ngAnimate = require('angular-animate');
 const app = angular.module('jufeApp', [
   ngRoute,
   ngSanitize,
-  ngAnimate
+  ngAnimate,
 ]);
 
 // one require statement per sub directory instead of one per file
 require('./factories');
 require('./controllers');
 
-app.config($routeProvider => {
+app.config(($routeProvider) => {
   // App routes
   $routeProvider
     .when('/home', {
       templateUrl: 'partials/home.html',
-      controller: 'HomeCtrl'
+      controller: 'HomeCtrl',
     })
     .when('/projects', {
       templateUrl: 'partials/projects.html',
-      controller: 'ProjectsCtrl'
+      controller: 'ProjectsCtrl',
     })
     .when('/about', {
       templateUrl: 'partials/about.html',
-      controller: 'AboutCtrl'
+      controller: 'AboutCtrl',
     })
     .otherwise('/home');
 });
