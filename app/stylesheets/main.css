@@ -12,6 +12,9 @@
   margin: 0;
   font-family: monofur; }
 
+body {
+  background-color: whitesmoke; }
+
 h3 {
   font-family: Pattaya; }
 
@@ -179,7 +182,6 @@ nav a:visited {
   height: 540px; }
 
 .item {
-  background-color: blue;
   border-radius: 50%; }
 
 .projects-container {
