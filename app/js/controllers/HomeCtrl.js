@@ -3,5 +3,5 @@
 module.exports = function($scope, homeFactory) {
   document.querySelector('.home-nav').focus();
   
-  $scope.gridCells = homeFactory.generateGridCells();
+  $scope.gridCellsArray = homeFactory.generateGridArray();
 };

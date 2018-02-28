@@ -2,15 +2,13 @@
 
 module.exports = function() {
   return {
-    generateGridCells: function() {
-      let gridString = '';
-      let cols = 100;
-      let rows = 60;
-      let totalCells = cols * rows;
+    generateGridArray: function() {
+      let gridArray = [];
+      let totalCells = 6000;
       for (let i = 0; i < totalCells; i++) {
-        gridString += '<div class="item"></div>';
+        gridArray.push(i);
       }
-      return gridString;
+      return gridArray;
     }
   };
 };

@@ -49,7 +49,7 @@ module.exports = function($scope) {
 module.exports = function($scope, homeFactory) {
   document.querySelector('.home-nav').focus();
   
-  $scope.gridCells = homeFactory.generateGridCells();
+  $scope.gridCellsArray = homeFactory.generateGridArray();
 };
 
 },{}],4:[function(require,module,exports){
@@ -89,15 +89,13 @@ app.controller('AboutCtrl', require('./AboutCtrl'));
 
 module.exports = function() {
   return {
-    generateGridCells: function() {
-      let gridString = '';
-      let cols = 100;
-      let rows = 60;
-      let totalCells = cols * rows;
+    generateGridArray: function() {
+      let gridArray = [];
+      let totalCells = 6000;
       for (let i = 0; i < totalCells; i++) {
-        gridString += '<div class="item"></div>';
+        gridArray.push(i);
       }
-      return gridString;
+      return gridArray;
     }
   };
 };
