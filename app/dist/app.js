@@ -44,13 +44,18 @@ module.exports = function($scope) {
 };
 
 },{}],3:[function(require,module,exports){
-module.exports = function($scope, homeFactory) {
+module.exports = function ($scope, homeFactory, $timeout, $animate) {
   document.querySelector('.home-nav').focus();
-  
+
   $scope.gridCellsArray = homeFactory.generateGridArray();
 
-  $scope.cellColor = 'blue';
+  $timeout(() => {
+    $scope.cellColor = 'blue';
+  }, 50);
 
+  $timeout(() => {
+    $scope.cellColor = 'green';
+  }, 5000);
 };
 
 },{}],4:[function(require,module,exports){
